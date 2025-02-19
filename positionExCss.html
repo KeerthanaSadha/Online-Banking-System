@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Ex</title>
+</head>
+<body>
+    <h2>Position</h2>
+
+    <div class="outDiv">
+        <div class="inDiv"> Absolute Ele 1</div>
+        <div class="inDiv absDiv"> Absolute Ele 2 </div>
+        <div class="inDiv"> Absolute Ele 3</div>
+    </div>
+    <div class="outDiv">
+        <div class="inDiv"> Relative Ele 1</div>
+        <div class="inDiv relDiv"> Relative Ele 2 </div>
+        <div class="inDiv"> Relative Ele 3</div>
+    </div>
+    <div class="outDiv">
+        <div class="inDiv"> Sticky Ele 1</div>
+        <div class="inDiv stickDiv"> Sticky Ele 2 </div>
+        <div class="inDiv"> Sticky Ele 3</div>
+    </div>
+    <div class="outDiv">
+        <div class="inDiv"> Fixed Ele 1</div>
+        <div class="inDiv fixDiv"> Fixed Ele 2 </div>
+        <div class="inDiv"> Fixed Ele 3</div>
+    </div>
+    <style>
+        .outDiv{
+            width: 300px;
+            height: 400px;
+            border : solid 4px coral;
+        }
+        .inDiv{
+            width: 100px;
+            height: 100px;
+            border : solid 3px rebeccapurple;
+        }
+        .absDiv{
+            display:flex;
+            position: absolute;
+            background-color: blueviolet;
+            margin-left: 300px;
+        }
+        .relDiv{
+            display: flex;
+            position: relative;
+            background-color: chartreuse;
+            margin-left:300px;
+        }
+        .stickDiv{
+            display: flex;
+            position: sticky;
+            left:200px;
+            background-color: crimson;
+            margin-top:10px;
+        }
+        .fixDiv{
+            display: flex;
+            position: fixed;           
+            background-color: darkgreen;
+            left:400px;
+        }
+    </style>
+
+    <div class="outerDiv">
+        <div class="eleDiv eleDiv1"> Ele 1</div>
+        <div class="eleDiv eleDiv2"> Ele 2 </div>
+        <div class="eleDiv eleDiv3"> Ele 3 </div>
+    </div>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p>
+    <p>dsgdsfgdfg dsgsd</p><p>dsgdsfgdfg dsgsd</p>
+
+    <div class="outerDiv">
+        <div class="eleDiv eleDiv1"> Ele 1</div>
+        <div class="eleDiv eleDiv2"> Ele 2 </div>
+        <div class="eleDiv eleDiv3"> Ele 3 </div>
+    </div>
+    <style>
+        .eleDiv{
+            width:100px;
+            height: 100px;
+        }
+        .eleDiv1{
+            background-color: brown;
+        }
+        .eleDiv2{
+            background-color:darkgoldenrod;
+            margin-left: 20px;
+            margin-top:50px;
+            display:flex;
+            position: sticky;
+        }
+        .eleDiv3{
+            background-color:deeppink;
+        }
+        .outerDiv{
+            margin-left: 100px;
+            background-color: aqua;
+            width:500px;
+            height: 400px;
+            display:flex;
+            position: relative;
+
+        }
+    </style>
+    
+</body>
+</html>
