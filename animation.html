@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<body>
+    <h2>Animation & Transform</h2>
+    <div id="box">
+
+    </div>
+    <style>
+        #box{
+            width: 200px;
+            height: 100px;
+            border: solid 3px brown;
+            margin-left: 500 px;
+            animation-name: doll;
+            animation-duration:20s ;
+            animation-delay:2s ;
+            animation-iteration-count: 5;
+
+        }
+        #box:hover{
+         /* transform: rotate(30deg); */
+         /* transform: scale(1,1.5); */
+         /* transform: skewx(30deg); */
+         transform: translate(10px,30px);
+        }
+        @keyframes doll{
+            0%{
+                transform: scale(2);
+                background-color: aqua;
+            }
+            10%{
+                background-color: brown;
+                transform: rotate(75deg);
+
+            }
+            20%{
+                background-color: darkgoldenrod;
+                transform: skew(55deg);
+            }
+            40%{
+                background-color: chartreuse;
+                transform: translate(70px,100px);
+            }
+            50%{
+                background-color: fuchsia;
+                transform :rotate(45deg);
+            }
+            70%{
+                background-image: url("./asserts/images/testimage.jpeg");
+            }
+            90%{
+                background-color: gray;
+            }
+            100%{
+                background-color: darkblue;
+            }
+        }
+
+        @keyframes movable{
+            from {
+                transform:rotate(45deg);
+
+            }
+            to {
+                transform:rotate(85deg);
+
+            }
+        }
+    </style>
+</body>
+</html>
