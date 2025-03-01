@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Online Banking</title>
+</head>
+
+<body>
+
+    <div class="signupDiv">
+        <h1>Sign Up</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" name="fullname" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="confirm_password" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <style>
+        .signupDiv {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        
+        .signupDiv::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./asserts/images/SignUp.jpg);
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .signupDiv h1,
+        .signupDiv form,
+        .signupDiv p {
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        .signupDiv table {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .signupDiv td {
+            color: white;
+            padding: 8px;
+        }
+
+        .signupDiv input[type="text"],
+        .signupDiv input[type="email"],
+        .signupDiv input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .signupDiv input[type="submit"] {
+            background: yellow;
+            color: black;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .signupDiv a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+        .signupDiv a:hover {
+            color: orange;
+        }
+    </style>
+</body>
+
+</html>

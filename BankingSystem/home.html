@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Online Banking</title>
+</head>
+
+<body>
+    <div class="homeDiv">
+        <h1>Welcome to Online Banking</h1>
+        <div>
+            <a href="signup.html">Sign Up</a> |
+            <a href="login.html">Login</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <p>Secure and convenient banking at your fingertips.</p>
+    </div>
+    <style>
+        .homeDiv {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            background-image: url(./asserts/images/HomeBanking.jpg);
+            opacity: 0.9;
+        }
+
+        .homeDiv h1 {
+            color:black;
+            font-size: 36px;
+        }
+
+        .homeDiv a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .homeDiv a:hover {
+            color: rgb(246, 9, 210);
+        }
+
+        .homeDiv p {
+            color: black;
+            font-size: 18px;
+        }
+    </style>
+</body>
+
+</html>
